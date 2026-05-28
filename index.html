@@ -1,81 +1,284 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="description" content="Premium barber shop offering fades, beard trims, and luxury grooming services. Book your appointment today.">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PlumberPro - Professional Plumbing Services</title>
 
-    <title>Barber hero section</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- Google Fonts for premium look -->
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;800&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-blue.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-    <!-- Tailwind CSS -->
-    <script src="https://cdn.tailwindcss.com"></script>
+<!-- IMAGE FIX CSS -->
+<style>
+.hero-img {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+}
 
-    <!-- Custom Tailwind config for gold color -->
-    <script>
-      tailwind.config = {
-        theme: {
-          extend: {
-            colors: {
-              gold: '#f5d76e'
-            }
-          }
-        }
-      }
-    </script>
-
-    <style>
-      /* Apply premium fonts */
-      h1, h2 {
-        font-family: 'Playfair Display', serif;
-      }
-      body, p, a, button {
-        font-family: 'Poppins', sans-serif;
-      }
-    </style>
+.service-img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+</style>
 
 </head>
+<body id="myPage">
 
-<body class="bg-black text-white min-h-screen">
-
-<!-- Nav Bar + Hero Section  -->
-<section class="relative h-screen bg-cover bg-center" style="background-image: url('Barber bg image.jpg');">
-<!-- Overlay -->
-  <div class="absolute inset-0 bg-black/60"></div>
-  <!-- Navbar -->
-
-<nav class="absolute top-0 left-0 w-full z-20">
-  <div class="max-w-7xl mx-auto px-6 py-5 flex items-center justify-between">
-    <h1 class="text-2xl font-bold tracking-wide text-white">BARBER<span class="text-yellow-500">PRO</span></h1>
-
-    <ul class="hidden md:flex space-x-8 text-white font-medium">
-      <li><a href="Index.html" class="hover:text-yellow-500 transition">Home</a></li>
-      <li><a href="Services.html" class="hover:text-yellow-500 transition">Services</a></li>
-      <li><a href="Gallery.html" class="hover:text-yellow-500 transition">Gallery</a></li>
-      <li><a href="Pricing.html" class="hover:text-yellow-500 transition">Pricing</a></li>
-      <li><a href="Contacts.html" class="hover:text-yellow-500 transition">Contact</a></li>
-    </ul>
-    <button class="md:hidden text-white text-3xl">&#9776;</button>
-  </div>
+<!-- Sidebar -->
+<nav class="w3-sidebar w3-bar-block w3-white w3-card w3-animate-left w3-xxlarge"
+style="display:none;z-index:2" id="mySidebar">
+<a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-display-topright w3-text-blue">
+Close <i class="fa fa-remove"></i>
+</a>
 </nav>
 
-  <!-- Hero Content -->
-  <div class="relative z-10 flex flex-col justify-center items-center h-full text-center px-6">
-    <h2 class="text-5xl md:text-7xl font-extrabold text-white tracking-tight drop-shadow-[0_0_10px_grey]">
-      Premium Cuts for the Sophisticated Men
-    </h2>
+<!-- Navbar -->
+<div class="w3-top">
+<div class="w3-bar w3-theme-d2 w3-left-align">
 
-    <p class="mt-4 text-lg md:text-xl text-gray-300 max-w-2xl">
-      Experience various styles e.g, sharp fades, clean shaves, and luxury grooming in a studio built for confidence.
-    </p>
+<a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-hover-white"
+href="javascript:void(0);" onclick="openNav()">
+<i class="fa fa-bars"></i>
+</a>
 
-    <button class="mt-8 px-8 py-4 bg-yellow-500 text-black font-semibold text-lg rounded-lg shadow-lg hover:bg-yellow-300 transition">
-      Book Barber Appointment
-    </button>
+<a href="#" class="w3-bar-item w3-button w3-blue">
+<i class="fa fa-home w3-margin-right"></i>PlumberPro
+</a>
+
+<a href="#services" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Services</a>
+<a href="#about" class="w3-bar-item w3-button w3-hide-small w3-hover-white">About</a>
+<a href="#pricing" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Pricing</a>
+<a href="#contact" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Contact</a>
+
+</div>
+
+<!-- Mobile Navbar -->
+<div id="navDemo" class="w3-bar-block w3-theme-d2 w3-hide w3-hide-large w3-hide-medium">
+<a href="#services" class="w3-bar-item w3-button">Services</a>
+<a href="#about" class="w3-bar-item w3-button">About</a>
+<a href="#pricing" class="w3-bar-item w3-button">Pricing</a>
+<a href="#contact" class="w3-bar-item w3-button">Contact</a>
+</div>
+</div>
+
+<!-- Hero Section -->
+<div class="w3-display-container w3-animate-opacity">
+
+<img src="hero-plumber.jpg" 
+     alt="Plumber fixing a pipe" 
+     class="hero-img">
+
+<div class="w3-display-middle w3-center">
+<h1 class="w3-xxlarge w3-text-white">Reliable Plumbing Services in Birmingham</h1>
+<p class="w3-large w3-text-white">Fast, Affordable & Available 24/7 for Emergencies</p>
+</div>
+
+<div class="w3-display-bottomleft w3-margin-bottom">
+<button class="w3-button w3-xlarge w3-theme w3-hover-blue">Book a Plumber</button>
+</div>
+
+</div>
+
+<!-- About Section -->
+<div class="w3-container w3-padding-64 w3-center" id="about">
+
+<h2>ABOUT US</h2>
+<p>Professional plumbing services with over 10 years of experience. Fully insured and Gas Safe registered.</p>
+
+<!-- Centered Johnny Smith -->
+<div class="w3-display-container" style="height:350px;">
+  <div class="w3-display-middle w3-center">
+
+    <img src="jhonny.jpg" 
+         alt="Plumber"
+         style="width:200px; height:200px; object-fit:cover;" 
+         class="w3-circle w3-hover-opacity w3-margin-bottom">
+
+    <h3 class="w3-xxlarge w3-margin-top">Johnny Smith</h3>
+    <p class="w3-large">Lead Plumber</p>
+
   </div>
+</div>
 
-</section>
+</div>
+
+<!-- Services Section -->
+<div class="w3-row-padding w3-padding-64 w3-theme-l1" id="services">
+
+<div class="w3-quarter">
+<h2>Our Services</h2>
+<p>We provide fast, reliable plumbing services across Birmingham. From leaks to boiler repairs, we handle it all.</p>
+</div>
+
+<!-- SERVICE 1 -->
+<div class="w3-quarter">
+<div class="w3-card w3-white">
+<img src="fixing-leaks.jpg" class="service-img">
+<div class="w3-container">
+<h3>Leak Detection & Repair</h3>
+<p>Fast diagnosis and repair of leaks, burst pipes, and water damage.</p>
+</div>
+</div>
+</div>
+
+<!-- SERVICE 2 -->
+<div class="w3-quarter">
+<div class="w3-card w3-white">
+<img src="boiler-installation.jpg" class="service-img">
+<div class="w3-container">
+<h3>Boiler Installation & Servicing</h3>
+<p>Gas Safe registered boiler installation, repairs, and annual servicing.</p>
+</div>
+</div>
+</div>
+
+<!-- SERVICE 3 -->
+<div class="w3-quarter">
+<div class="w3-card w3-white">
+<img src="fitting-bathroom.jpg" class="service-img">
+<div class="w3-container">
+<h3>Bathroom Fitting</h3>
+<p>Professional installation of sinks, toilets, showers, and full bathroom suites.</p>
+</div>
+</div>
+</div>
+
+</div>
+
+<!-- Pricing Section -->
+<div class="w3-row-padding w3-center w3-padding-64" id="pricing">
+
+<h2>PRICING</h2>
+<p>Choose a pricing plan that fits your needs.</p><br>
+
+<!-- BASIC -->
+<div class="w3-third w3-margin-bottom">
+<ul class="w3-ul w3-border w3-hover-shadow">
+<li class="w3-theme"><p class="w3-xlarge">Basic Call-Out</p></li>
+<li class="w3-padding-16"><b>Leak inspection</b></li>
+<li class="w3-padding-16">Minor repairs</li>
+<li class="w3-padding-16">30-minute visit</li>
+<li class="w3-padding-16"><h2 class="w3-wide">£40</h2></li>
+<li class="w3-theme-l5 w3-padding-24">
+<button class="w3-button w3-blue w3-padding-large">Book Now</button>
+</li>
+</ul>
+</div>
+
+<!-- STANDARD -->
+<div class="w3-third w3-margin-bottom">
+<ul class="w3-ul w3-border w3-hover-shadow">
+<li class="w3-theme"><p class="w3-xlarge">Standard Repair</p></li>
+<li class="w3-padding-16"><b>Pipe replacement</b></li>
+<li class="w3-padding-16">Tap installation</li>
+<li class="w3-padding-16">Toilet repair</li>
+<li class="w3-padding-16"><h2 class="w3-wide">£90</h2></li>
+<li class="w3-theme-l5 w3-padding-24">
+<button class="w3-button w3-blue w3-padding-large">Book Now</button>
+</li>
+</ul>
+</div>
+
+<!-- PREMIUM -->
+<div class="w3-third w3-margin-bottom">
+<ul class="w3-ul w3-border w3-hover-shadow">
+<li class="w3-theme"><p class="w3-xlarge">Boiler Service</p></li>
+<li class="w3-padding-16"><b>Full boiler check</b></li>
+<li class="w3-padding-16">Safety inspection</li>
+<li class="w3-padding-16">Certification</li>
+<li class="w3-padding-16"><h2 class="w3-wide">£120</h2></li>
+<li class="w3-theme-l5 w3-padding-24">
+<button class="w3-button w3-blue w3-padding-large">Book Now</button>
+</li>
+</ul>
+</div>
+
+</div>
+
+<!-- Contact Section -->
+<div class="w3-container w3-padding-64 w3-theme-l5" id="contact">
+
+<div class="w3-row">
+
+<div class="w3-col m5">
+<div class="w3-padding-16">
+<span class="w3-xlarge w3-border-blue w3-bottombar">Contact Us</span>
+</div>
+
+<h3>Birmingham plumber details</h3>
+<p><i class="fa fa-map-marker"></i> Oldbury, Birmingham</p>
+<p><i class="fa fa-phone"></i> 0121 555 7890</p>
+<p><i class="fa fa-envelope-o"></i> info@plumberpro.co.uk</p>
+</div>
+
+<div class="w3-col m7">
+<form class="w3-container w3-card-4 w3-padding-16 w3-white">
+
+<div class="w3-section">
+<label>Your Name</label>
+<input class="w3-input" type="text" required>
+</div>
+
+<div class="w3-section">
+<label>Your Email</label>
+<input class="w3-input" type="text" required>
+</div>
+
+<div class="w3-section">
+<label>How can we help?</label>
+<input class="w3-input" type="text" required>
+</div>
+
+<input class="w3-check" type="checkbox" checked>
+<label>Request a callback</label>
+
+<button type="submit" class="w3-button w3-right w3-theme">Send Message</button>
+
+</form>
+</div>
+
+</div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-32 w3-theme-d1 w3-center">
+<h4>Follow Us</h4>
+
+<a class="w3-button w3-large w3-blue"><i class="fa fa-facebook"></i></a>
+<a class="w3-button w3-large w3-blue"><i class="fa fa-twitter"></i></a>
+<a class="w3-button w3-large w3-blue"><i class="fa fa-instagram"></i></a>
+
+<p>Serving Oldbury, Birmingham, Smethwick, Dudley & surrounding areas.</p>
+<p>© 2026 PlumberPro. All rights reserved.</p>
+
+</footer>
+
+<script>
+function w3_open() {
+var x = document.getElementById("mySidebar");
+x.style.width = "300px";
+x.style.paddingTop = "10%";
+x.style.display = "block";
+}
+
+function w3_close() {
+document.getElementById("mySidebar").style.display = "none";
+}
+
+function openNav() {
+var x = document.getElementById("navDemo");
+if (x.className.indexOf("w3-show") == -1) {
+x.className += " w3-show";
+} else {
+x.className = x.className.replace(" w3-show", "");
+}
+}
+</script>
+
 </body>
 </html>

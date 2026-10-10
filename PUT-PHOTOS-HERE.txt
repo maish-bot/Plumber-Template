@@ -1,0 +1,11 @@
+Put your photos in the same folder as index.html with these exact names (JPG).
+Anything missing shows a grey "Add photo" box until you add it.
+
+hero-plumber.jpg         Main photo at the top (landscape, at least 1400px wide)
+fixing-leaks.jpg         Service: leaks & burst pipes (landscape)
+boiler-installation.jpg  Service: boilers & heating (landscape)
+fitting-bathroom.jpg     Service: bathroom fitting (landscape)
+jhonny.jpg               Photo of the plumber for "Hi, I'm Johnny" (portrait)
+
+Real photos of you and your own work sell far better than stock photos.
+Keep each photo under 400 KB so the site loads fast on phones (https://squoosh.app).

@@ -1,284 +1,312 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>PlumberPro - Professional Plumbing Services</title>
-
-<meta charset="UTF-8">
+<meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
-<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-blue.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-<!-- IMAGE FIX CSS -->
-<style>
-.hero-img {
-  width: 100%;
-  height: 500px;
-  object-fit: cover;
-}
-
-.service-img {
-  width: 100%;
-  height: 220px;
-  object-fit: cover;
-  border-radius: 6px;
-}
-</style>
-
+<title>PlumberPro | Plumber in Oldbury & Birmingham – 24/7 Emergency Plumbing</title>
+<meta name="description" content="Local Gas Safe plumber in Oldbury & Birmingham. Leaks, burst pipes, boilers and bathrooms. Fixed prices, 24/7 emergency call-outs. Call 0121 555 7890.">
+<meta property="og:title" content="PlumberPro | Plumber in Oldbury & Birmingham">
+<meta property="og:description" content="Leaks, boilers and bathrooms fixed properly. Fixed prices, 24/7 emergencies.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="hero-plumber.jpg">
+<meta name="theme-color" content="#10273a">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%2310273a'/%3E%3Cpath d='M16 6s-7 7.5-7 13a7 7 0 0 0 14 0c0-5.5-7-13-7-13Z' fill='%23f2a51a'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Plumber","name":"PlumberPro","telephone":"0121 555 7890","email":"info@plumberpro.co.uk",
+ "areaServed":["Oldbury","Birmingham","Smethwick","Dudley","West Bromwich","Halesowen"],
+ "address":{"@type":"PostalAddress","addressLocality":"Oldbury","addressRegion":"West Midlands","addressCountry":"GB"},
+ "openingHours":"Mo-Su 00:00-23:59","priceRange":"££","image":"hero-plumber.jpg"}
+</script>
 </head>
-<body id="myPage">
+<body>
+<a class="skip" href="#main">Skip to content</a>
 
-<!-- Sidebar -->
-<nav class="w3-sidebar w3-bar-block w3-white w3-card w3-animate-left w3-xxlarge"
-style="display:none;z-index:2" id="mySidebar">
-<a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-display-topright w3-text-blue">
-Close <i class="fa fa-remove"></i>
-</a>
-</nav>
-
-<!-- Navbar -->
-<div class="w3-top">
-<div class="w3-bar w3-theme-d2 w3-left-align">
-
-<a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-hover-white"
-href="javascript:void(0);" onclick="openNav()">
-<i class="fa fa-bars"></i>
-</a>
-
-<a href="#" class="w3-bar-item w3-button w3-blue">
-<i class="fa fa-home w3-margin-right"></i>PlumberPro
-</a>
-
-<a href="#services" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Services</a>
-<a href="#about" class="w3-bar-item w3-button w3-hide-small w3-hover-white">About</a>
-<a href="#pricing" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Pricing</a>
-<a href="#contact" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Contact</a>
-
-</div>
-
-<!-- Mobile Navbar -->
-<div id="navDemo" class="w3-bar-block w3-theme-d2 w3-hide w3-hide-large w3-hide-medium">
-<a href="#services" class="w3-bar-item w3-button">Services</a>
-<a href="#about" class="w3-bar-item w3-button">About</a>
-<a href="#pricing" class="w3-bar-item w3-button">Pricing</a>
-<a href="#contact" class="w3-bar-item w3-button">Contact</a>
-</div>
-</div>
-
-<!-- Hero Section -->
-<div class="w3-display-container w3-animate-opacity">
-
-<img src="hero-plumber.jpg" 
-     alt="Plumber fixing a pipe" 
-     class="hero-img">
-
-<div class="w3-display-middle w3-center">
-<h1 class="w3-xxlarge w3-text-white">Reliable Plumbing Services in Birmingham</h1>
-<p class="w3-large w3-text-white">Fast, Affordable & Available 24/7 for Emergencies</p>
-</div>
-
-<div class="w3-display-bottomleft w3-margin-bottom">
-<button class="w3-button w3-xlarge w3-theme w3-hover-blue">Book a Plumber</button>
-</div>
-
-</div>
-
-<!-- About Section -->
-<div class="w3-container w3-padding-64 w3-center" id="about">
-
-<h2>ABOUT US</h2>
-<p>Professional plumbing services with over 10 years of experience. Fully insured and Gas Safe registered.</p>
-
-<!-- Centered Johnny Smith -->
-<div class="w3-display-container" style="height:350px;">
-  <div class="w3-display-middle w3-center">
-
-    <img src="jhonny.jpg" 
-         alt="Plumber"
-         style="width:200px; height:200px; object-fit:cover;" 
-         class="w3-circle w3-hover-opacity w3-margin-bottom">
-
-    <h3 class="w3-xxlarge w3-margin-top">Johnny Smith</h3>
-    <p class="w3-large">Lead Plumber</p>
-
+<div class="strip">
+  <div class="wrap">
+    <div class="strip__items">
+      <span data-needs-247><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>24/7 emergency call-outs</span>
+      <span data-needs-gassafe><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10Z"/><path d="m9 12 2 2 4-4"/></svg>Gas Safe registered</span>
+      <span><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>12-month guarantee</span>
+    </div>
+    <span><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>Covering <span data-site="town">Oldbury & Birmingham</span></span>
   </div>
 </div>
 
+<header class="header">
+  <div class="wrap">
+    <a class="logo" href="#top"><span class="logo__mark"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2.7s-6 6.4-6 11.3a6 6 0 0 0 12 0c0-4.9-6-11.3-6-11.3Z"/></svg></span><span data-site="name">PlumberPro</span></a>
+    <ul class="nav">
+      <li><a href="#services">Services</a></li>
+      <li><a href="#prices">Prices</a></li>
+      <li><a href="#reviews">Reviews</a></li>
+      <li><a href="#areas">Areas</a></li>
+      <li><a href="#faq">FAQ</a></li>
+    </ul>
+    <div class="header__cta">
+      <a class="header__phone" href="tel:+441215557890" data-link="tel"><small data-availability>Taking calls now</small><b data-site="phone">0121 555 7890</b></a>
+      <a class="btn btn--navy" href="#quote">Free quote</a>
+      <button class="menu-btn" aria-label="Menu" aria-expanded="false" aria-controls="mobile-nav"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16"/></svg></button>
+    </div>
+  </div>
+  <nav class="mobile-nav" id="mobile-nav" aria-label="Mobile">
+    <a href="#services">Services</a><a href="#prices">Prices</a><a href="#reviews">Reviews</a><a href="#areas">Areas covered</a><a href="#faq">FAQ</a><a href="#quote">Get a free quote</a>
+  </nav>
+</header>
+
+<main id="main">
+<section class="hero" id="top">
+  <div class="wrap">
+    <div>
+      <span class="live" data-availability>Taking calls now</span>
+      <h1 style="margin-top:14px">Plumber in <span data-site="town">Oldbury & Birmingham</span></h1>
+      <p class="hero__lead">Leaks, boilers and bathrooms fixed properly. Clear prices before we start, and a 12-month guarantee on every job.</p>
+      <div class="hero__actions">
+        <a class="btn btn--call btn--big" href="tel:+441215557890" data-link="tel"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2Z"/></svg>Call <span data-site="phone">0121 555 7890</span></a>
+        <a class="btn btn--outline btn--big" href="#quote" style="color:var(--navy)">Get a free quote</a>
+      </div>
+      <ul class="ticks">
+        <li data-needs-247><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Emergency call-outs 24/7, usually within the hour</li>
+        <li data-needs-gassafe><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Gas Safe registered (No. <span data-site="gasSafe">123456</span>) and fully insured</li>
+        <li><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>No call-out surprises: fixed price agreed first</li>
+      </ul>
+    </div>
+    <div class="hero__media">
+      <div class="frame"><img src="hero-plumber.jpg" alt="Plumber fixing a pipe under a sink" data-photo fetchpriority="high"></div>
+      <div class="callout" data-needs-rating>
+        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg>
+        <div><b><span data-site="rating">4.9</span> out of 5 on Google</b><span>from <span data-site="reviewCount">180</span> local reviews</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="trust">
+  <div class="wrap">
+    <div class="trust__item" data-needs-gassafe><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10Z"/><path d="m9 12 2 2 4-4"/></svg><div><b>Gas Safe registered</b><span>Check our ID on arrival</span></div></div>
+    <div class="trust__item"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 7a4 4 0 0 0-7-2.6C10 5.6 10 7 10 9v9M6 13h8M6 18h12"/></svg><div><b>Fixed prices</b><span>Agreed before we start</span></div></div>
+    <div class="trust__item"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg><div><b>12-month guarantee</b><span>On all our workmanship</span></div></div>
+    <div class="trust__item" data-needs-247><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg><div><b>24/7 emergencies</b><span>Including bank holidays</span></div></div>
+  </div>
 </div>
 
-<!-- Services Section -->
-<div class="w3-row-padding w3-padding-64 w3-theme-l1" id="services">
+<section class="section" id="services">
+  <div class="wrap">
+    <div class="head reveal"><span class="kicker">Services</span><h2>What we can help with</h2><p class="muted">From a dripping tap to a full bathroom. One local, qualified plumber from first call to finished job.</p></div>
+    <div class="services">
+      <article class="service reveal">
+        <div class="frame"><img src="fixing-leaks.jpg" alt="Plumber repairing a leaking pipe" loading="lazy" data-photo></div>
+        <div class="service__body">
+          <h3>Leaks & burst pipes</h3>
+          <p>Found and fixed fast, with as little mess as possible. We trace hidden leaks too.</p>
+          <div class="service__price"><span>From <b>£40</b></span><a class="link" href="#quote" data-job="Leak or burst pipe">Get a quote</a></div>
+        </div>
+      </article>
+      <article class="service reveal">
+        <div class="frame"><img src="boiler-installation.jpg" alt="Engineer servicing a boiler" loading="lazy" data-photo></div>
+        <div class="service__body">
+          <h3>Boilers & heating</h3>
+          <p>Gas Safe servicing, repairs and new boiler installs, plus radiators and powerflushing.</p>
+          <div class="service__price"><span>From <b>£120</b></span><a class="link" href="#quote" data-job="Boiler or heating">Get a quote</a></div>
+        </div>
+      </article>
+      <article class="service reveal">
+        <div class="frame"><img src="fitting-bathroom.jpg" alt="Newly fitted bathroom" loading="lazy" data-photo></div>
+        <div class="service__body">
+          <h3>Bathroom fitting</h3>
+          <p>Showers, toilets, sinks and full bathroom suites fitted and finished properly.</p>
+          <div class="service__price"><span><b>Free quote</b></span><a class="link" href="#quote" data-job="Bathroom fitting">Get a quote</a></div>
+        </div>
+      </article>
+    </div>
+    <ul class="also reveal"><li><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Blocked drains & sinks</li><li><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Taps & toilets</li><li><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Radiators & valves</li><li><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Outside taps</li><li><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Water pressure problems</li><li><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Landlord gas safety checks</li></ul>
+  </div>
+</section>
 
-<div class="w3-quarter">
-<h2>Our Services</h2>
-<p>We provide fast, reliable plumbing services across Birmingham. From leaks to boiler repairs, we handle it all.</p>
-</div>
+<section class="section section--dark" id="emergency" data-needs-247>
+  <div class="wrap emergency">
+    <div class="reveal">
+      <span class="kicker">Emergency?</span>
+      <h2>Water leaking right now?</h2>
+      <p class="muted">Do these three things while we’re on our way. It can save your ceiling, flooring and a lot of money.</p>
+      <div class="hero__actions"><a class="btn btn--call btn--big" href="tel:+441215557890" data-link="tel"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2Z"/></svg>Call <span data-site="phone">0121 555 7890</span></a></div>
+    </div>
+    <ol class="steps reveal">
+      <li><div><b>Turn off the water at the stopcock</b><span>Usually under the kitchen sink. Turn it clockwise until it stops.</span></div></li>
+      <li><div><b>Switch off electrics near the leak</b><span>If water is near sockets or lights, turn them off at the fuse box.</span></div></li>
+      <li><div><b>Call us and we’ll come straight out</b><span>Tell us your postcode and what you can see. We’ll give you an arrival time.</span></div></li>
+    </ol>
+  </div>
+</section>
 
-<!-- SERVICE 1 -->
-<div class="w3-quarter">
-<div class="w3-card w3-white">
-<img src="fixing-leaks.jpg" class="service-img">
-<div class="w3-container">
-<h3>Leak Detection & Repair</h3>
-<p>Fast diagnosis and repair of leaks, burst pipes, and water damage.</p>
-</div>
-</div>
-</div>
+<section class="section section--grey" id="prices">
+  <div class="wrap">
+    <div class="head reveal"><span class="kicker">Prices</span><h2>Clear prices, no surprises</h2><p class="muted">We always confirm the price before starting work. Prices include labour; parts are charged at cost.</p></div>
+    <div class="plans">
+      <div class="plan reveal">
+        
+        <h3>Call-out & small fix</h3>
+        <div class="plan__price">£40 <small>first 30 min</small></div>
+        <ul class="ticks"><li><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Leak inspection</li><li><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Minor repairs</li><li><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Washers, valves, seals</li></ul>
+        <a class="btn btn--navy" href="#quote" data-job="Leak or burst pipe">Book this</a>
+      </div>
+      <div class="plan plan--featured reveal">
+        <span class="plan__tag">Most common</span>
+        <h3>Standard repair</h3>
+        <div class="plan__price">£90 <small>most jobs</small></div>
+        <ul class="ticks"><li><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Pipe replacement</li><li><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Tap installation</li><li><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Toilet repairs</li></ul>
+        <a class="btn btn--call" href="#quote" data-job="Taps or toilet">Book this</a>
+      </div>
+      <div class="plan reveal">
+        
+        <h3>Boiler service</h3>
+        <div class="plan__price">£120 <small>fixed price</small></div>
+        <ul class="ticks"><li><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Full boiler check</li><li><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Gas safety inspection</li><li><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Service certificate</li></ul>
+        <a class="btn btn--navy" href="#quote" data-job="Boiler or heating">Book this</a>
+      </div>
+    </div>
+    <div class="jobs reveal"><div class="job"><span>Replace a kitchen or bathroom tap</span><b>from £70</b></div><div class="job"><span>Fix a running or leaking toilet</span><b>from £65</b></div><div class="job"><span>Unblock a sink or toilet</span><b>from £75</b></div><div class="job"><span>Fit an outside tap</span><b>from £95</b></div><div class="job"><span>Replace a radiator</span><b>from £160</b></div><div class="job"><span>Landlord gas safety certificate</span><b>£65</b></div></div>
+    <p class="muted small" style="margin-top:16px">Prices are a guide for typical jobs in our area. Every job gets a fixed quote before work starts.</p>
+  </div>
+</section>
 
-<!-- SERVICE 2 -->
-<div class="w3-quarter">
-<div class="w3-card w3-white">
-<img src="boiler-installation.jpg" class="service-img">
-<div class="w3-container">
-<h3>Boiler Installation & Servicing</h3>
-<p>Gas Safe registered boiler installation, repairs, and annual servicing.</p>
-</div>
-</div>
-</div>
+<section class="section">
+  <div class="wrap">
+    <div class="head reveal"><span class="kicker">How it works</span><h2>Simple from start to finish</h2></div>
+    <div class="process reveal">
+      <div><h3>Call or send a quote request</h3><p>Tell us what’s wrong. Photos help us quote quicker.</p></div>
+      <div><h3>Get a fixed price</h3><p>No hourly guesswork. You know the cost before we start.</p></div>
+      <div><h3>We fix it and tidy up</h3><p>Dust sheets down, mess cleared, everything tested.</p></div>
+      <div><h3>Guaranteed for 12 months</h3><p>If anything we did goes wrong, we come back free.</p></div>
+    </div>
+  </div>
+</section>
 
-<!-- SERVICE 3 -->
-<div class="w3-quarter">
-<div class="w3-card w3-white">
-<img src="fitting-bathroom.jpg" class="service-img">
-<div class="w3-container">
-<h3>Bathroom Fitting</h3>
-<p>Professional installation of sinks, toilets, showers, and full bathroom suites.</p>
-</div>
-</div>
-</div>
+<section class="section section--grey" id="about">
+  <div class="wrap about">
+    <div class="reveal"><div class="frame"><img src="jhonny.jpg" alt="Johnny Smith, lead plumber" loading="lazy" data-photo></div></div>
+    <div class="reveal">
+      <span class="kicker">Who you’ll get</span>
+      <h2>Hi, I’m Johnny</h2>
+      <p>I’ve been fixing pipes and boilers around <span data-site="town">Oldbury & Birmingham</span> for over 10 years. When you call, you get me or one of my small team, not a call centre.</p>
+      <p>I treat every home like my own: shoes off, dust sheets down, and I won’t leave until it’s working and tidy.</p>
+      <div class="creds">
+        <span data-needs-gassafe>Gas Safe registered</span><span>City &amp; Guilds qualified</span><span>£2m public liability insurance</span><span>DBS checked</span>
+      </div>
+    </div>
+  </div>
+</section>
 
-</div>
+<section class="section" id="reviews">
+  <div class="wrap">
+    <div class="head reveal"><span class="kicker">Reviews</span><h2>What local customers say</h2></div>
+    <p class="rating reveal" data-needs-rating><span class="stars" aria-label="5 out of 5 stars"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg></span><span><span data-site="rating">4.9</span> from <span data-site="reviewCount">180</span> Google reviews</span></p>
+    <div class="reviews">
+      <figure class="review reveal"><span class="stars" aria-label="5 out of 5 stars"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg></span><blockquote>“Pipe burst under the kitchen sink on a Sunday night. Johnny was here within the hour, fixed it and cleaned up. Fair price too.”</blockquote><figcaption><b>Priya S.</b> · Smethwick</figcaption></figure>
+      <figure class="review reveal"><span class="stars" aria-label="5 out of 5 stars"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg></span><blockquote>“Had our boiler serviced and two radiators replaced. Turned up when he said, explained everything and left the place spotless.”</blockquote><figcaption><b>Mark D.</b> · Oldbury</figcaption></figure>
+      <figure class="review reveal"><span class="stars" aria-label="5 out of 5 stars"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg></span><blockquote>“Quoted a fixed price for our new shower and stuck to it. Really tidy work. Already recommended him to my neighbour.”</blockquote><figcaption><b>Helen R.</b> · Halesowen</figcaption></figure>
+    </div>
+  </div>
+</section>
 
-<!-- Pricing Section -->
-<div class="w3-row-padding w3-center w3-padding-64" id="pricing">
+<section class="section section--grey" id="areas">
+  <div class="wrap about" style="grid-template-columns:1fr 1fr;align-items:start">
+    <div class="reveal">
+      <span class="kicker">Areas covered</span>
+      <h2>Local to you</h2>
+      <p class="muted">We cover these areas and everywhere in between. Not sure if you’re in range? Just call.</p>
+      <ul class="areas" data-areas>
+        <li><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>Oldbury</li><li><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>Birmingham</li><li><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>Smethwick</li><li><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>Dudley</li>
+      </ul>
+    </div>
+    <iframe class="map reveal" data-map title="Map of the area we cover" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
+</section>
 
-<h2>PRICING</h2>
-<p>Choose a pricing plan that fits your needs.</p><br>
+<section class="section" id="faq">
+  <div class="wrap">
+    <div class="head reveal"><span class="kicker">FAQ</span><h2>Common questions</h2></div>
+    <div class="faq reveal"><details><summary>Do you charge a call-out fee?</summary><p>Our £40 call-out covers the first 30 minutes on site, which is enough for most small fixes. If a job needs more, we give you a fixed price before starting.</p></details><details><summary>How quickly can you get to me in an emergency?</summary><p>We aim to be with you within 60 minutes for emergencies in our area, day or night.</p></details><details><summary>Are you Gas Safe registered and insured?</summary><p>Yes. We’re Gas Safe registered and carry full public liability insurance. Ask to see our ID card when we arrive.</p></details><details><summary>Do you guarantee your work?</summary><p>All workmanship is guaranteed for 12 months. New boilers come with the manufacturer’s warranty on top.</p></details><details><summary>How can I pay?</summary><p>Card, bank transfer or cash. You only pay once the job is done and you’re happy.</p></details><details><summary>Do you work evenings and weekends?</summary><p>Planned work runs Monday to Saturday. Emergency call-outs are available 24/7, including bank holidays.</p></details></div>
+  </div>
+</section>
 
-<!-- BASIC -->
-<div class="w3-third w3-margin-bottom">
-<ul class="w3-ul w3-border w3-hover-shadow">
-<li class="w3-theme"><p class="w3-xlarge">Basic Call-Out</p></li>
-<li class="w3-padding-16"><b>Leak inspection</b></li>
-<li class="w3-padding-16">Minor repairs</li>
-<li class="w3-padding-16">30-minute visit</li>
-<li class="w3-padding-16"><h2 class="w3-wide">£40</h2></li>
-<li class="w3-theme-l5 w3-padding-24">
-<button class="w3-button w3-blue w3-padding-large">Book Now</button>
-</li>
-</ul>
-</div>
+<section class="section section--dark" id="quote">
+  <div class="wrap contact">
+    <div class="reveal">
+      <span class="kicker">Get in touch</span>
+      <h2>Get a free quote</h2>
+      <p class="muted">Send the form and we’ll call you back, usually within the hour during office hours. For emergencies, please call.</p>
+      <ul class="contact-list">
+        <li><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2Z"/></svg><div><b>Call</b><a href="tel:+441215557890" data-link="tel" data-site="phone">0121 555 7890</a></div></li>
+        <li data-hide-group><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 11.5a8.4 8.4 0 0 1-12.4 7.4L3 21l2.1-5.6A8.4 8.4 0 1 1 21 11.5Z"/></svg><div><b>WhatsApp</b><a href="#" data-link="whatsapp" data-hide-empty>Send us a photo of the problem</a></div></li>
+        <li><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg><div><b>Email</b><a href="mailto:info@plumberpro.co.uk" data-link="email" data-site="email">info@plumberpro.co.uk</a></div></li>
+      </ul>
+      <h3>Office hours</h3>
+      <table class="hours"><tbody data-hours>
+        <tr><td>Monday – Friday</td><td>8am – 6pm</td></tr><tr><td>Saturday</td><td>9am – 2pm</td></tr><tr><td>Sunday</td><td>Emergencies only</td></tr>
+      </tbody></table>
+      <p class="muted small" style="margin-top:12px" data-needs-247>Emergency call-outs 24/7, 365 days a year.</p>
+    </div>
+    <div class="form reveal">
+      <h3>Tell us about the job</h3>
+      <form id="quote-form">
+        <div class="row-2">
+          <div class="field"><label for="q-name">Name</label><input id="q-name" name="name" autocomplete="name" required></div>
+          <div class="field"><label for="q-phone">Phone</label><input id="q-phone" name="phone" type="tel" autocomplete="tel" required></div>
+        </div>
+        <div class="row-2">
+          <div class="field"><label for="q-postcode">Postcode</label><input id="q-postcode" name="postcode" autocomplete="postal-code" required></div>
+          <div class="field"><label for="q-job">Type of job</label><select id="q-job" name="job"><option>Leak or burst pipe</option><option>Boiler or heating</option><option>Bathroom fitting</option><option>Blocked drain</option><option>Taps or toilet</option><option>Something else</option></select></div>
+        </div>
+        <fieldset class="field">
+          <legend>How urgent is it?</legend>
+          <div class="urgency">
+            <label><input type="radio" name="urgency" value="Emergency"> Emergency</label>
+            <label><input type="radio" name="urgency" value="This week" checked> This week</label>
+            <label><input type="radio" name="urgency" value="Flexible"> I’m flexible</label>
+          </div>
+        </fieldset>
+        <div class="field"><label for="q-msg">What’s the problem?</label><textarea id="q-msg" name="message" placeholder="e.g. Kitchen tap dripping, need it replaced"></textarea></div>
+        <button class="btn btn--call btn--big" type="submit" style="width:100%">Get my free quote</button>
+        <p class="muted small" style="margin:12px 0 0;text-align:center">We’ll only use your details to reply to you.</p>
+      </form>
+      <p class="form-msg" role="status"></p>
+    </div>
+  </div>
+</section>
+</main>
 
-<!-- STANDARD -->
-<div class="w3-third w3-margin-bottom">
-<ul class="w3-ul w3-border w3-hover-shadow">
-<li class="w3-theme"><p class="w3-xlarge">Standard Repair</p></li>
-<li class="w3-padding-16"><b>Pipe replacement</b></li>
-<li class="w3-padding-16">Tap installation</li>
-<li class="w3-padding-16">Toilet repair</li>
-<li class="w3-padding-16"><h2 class="w3-wide">£90</h2></li>
-<li class="w3-theme-l5 w3-padding-24">
-<button class="w3-button w3-blue w3-padding-large">Book Now</button>
-</li>
-</ul>
-</div>
-
-<!-- PREMIUM -->
-<div class="w3-third w3-margin-bottom">
-<ul class="w3-ul w3-border w3-hover-shadow">
-<li class="w3-theme"><p class="w3-xlarge">Boiler Service</p></li>
-<li class="w3-padding-16"><b>Full boiler check</b></li>
-<li class="w3-padding-16">Safety inspection</li>
-<li class="w3-padding-16">Certification</li>
-<li class="w3-padding-16"><h2 class="w3-wide">£120</h2></li>
-<li class="w3-theme-l5 w3-padding-24">
-<button class="w3-button w3-blue w3-padding-large">Book Now</button>
-</li>
-</ul>
-</div>
-
-</div>
-
-<!-- Contact Section -->
-<div class="w3-container w3-padding-64 w3-theme-l5" id="contact">
-
-<div class="w3-row">
-
-<div class="w3-col m5">
-<div class="w3-padding-16">
-<span class="w3-xlarge w3-border-blue w3-bottombar">Contact Us</span>
-</div>
-
-<h3>Birmingham plumber details</h3>
-<p><i class="fa fa-map-marker"></i> Oldbury, Birmingham</p>
-<p><i class="fa fa-phone"></i> 0121 555 7890</p>
-<p><i class="fa fa-envelope-o"></i> info@plumberpro.co.uk</p>
-</div>
-
-<div class="w3-col m7">
-<form class="w3-container w3-card-4 w3-padding-16 w3-white">
-
-<div class="w3-section">
-<label>Your Name</label>
-<input class="w3-input" type="text" required>
-</div>
-
-<div class="w3-section">
-<label>Your Email</label>
-<input class="w3-input" type="text" required>
-</div>
-
-<div class="w3-section">
-<label>How can we help?</label>
-<input class="w3-input" type="text" required>
-</div>
-
-<input class="w3-check" type="checkbox" checked>
-<label>Request a callback</label>
-
-<button type="submit" class="w3-button w3-right w3-theme">Send Message</button>
-
-</form>
-</div>
-
-</div>
-</div>
-
-<!-- Footer -->
-<footer class="w3-container w3-padding-32 w3-theme-d1 w3-center">
-<h4>Follow Us</h4>
-
-<a class="w3-button w3-large w3-blue"><i class="fa fa-facebook"></i></a>
-<a class="w3-button w3-large w3-blue"><i class="fa fa-twitter"></i></a>
-<a class="w3-button w3-large w3-blue"><i class="fa fa-instagram"></i></a>
-
-<p>Serving Oldbury, Birmingham, Smethwick, Dudley & surrounding areas.</p>
-<p>© 2026 PlumberPro. All rights reserved.</p>
-
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer__grid">
+      <div>
+        <a class="logo" href="#top"><span class="logo__mark"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2.7s-6 6.4-6 11.3a6 6 0 0 0 12 0c0-4.9-6-11.3-6-11.3Z"/></svg></span><span data-site="name">PlumberPro</span></a>
+        <p>Local, Gas Safe registered plumbing and heating in <span data-site="town">Oldbury & Birmingham</span>.</p>
+        <div class="socials">
+          <a href="#" data-link="facebook" data-hide-empty aria-label="Facebook"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+          <a href="#" data-link="instagram" data-hide-empty aria-label="Instagram"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><path d="M17.5 6.5h.01"/></svg></a>
+          <a href="#" data-link="google" data-hide-empty aria-label="Google reviews"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg></a>
+        </div>
+      </div>
+      <div><h4>Services</h4><ul><li><a href="#services">Leaks &amp; burst pipes</a></li><li><a href="#services">Boilers &amp; heating</a></li><li><a href="#services">Bathroom fitting</a></li><li><a href="#prices">Prices</a></li></ul></div>
+      <div><h4>Contact</h4><ul><li><a href="tel:+441215557890" data-link="tel" data-site="phone">0121 555 7890</a></li><li><a href="mailto:info@plumberpro.co.uk" data-link="email" data-site="email">info@plumberpro.co.uk</a></li><li data-needs-gassafe>Gas Safe No. <span data-site="gasSafe">123456</span></li></ul></div>
+    </div>
+    <div class="footer__bottom">
+      <span>&copy; <span data-site="year">2026</span> <span data-site="name">PlumberPro</span>. Serving <span data-areas-text>Oldbury, Birmingham, Smethwick and Dudley</span>.</span>
+      <span>Website by MaiWebStudio</span>
+    </div>
+  </div>
 </footer>
 
-<script>
-function w3_open() {
-var x = document.getElementById("mySidebar");
-x.style.width = "300px";
-x.style.paddingTop = "10%";
-x.style.display = "block";
-}
+<div class="callbar">
+  <a class="btn btn--call" href="tel:+441215557890" data-link="tel"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2Z"/></svg>Call now</a>
+  <a class="btn btn--navy" href="#quote">Free quote</a>
+</div>
 
-function w3_close() {
-document.getElementById("mySidebar").style.display = "none";
-}
-
-function openNav() {
-var x = document.getElementById("navDemo");
-if (x.className.indexOf("w3-show") == -1) {
-x.className += " w3-show";
-} else {
-x.className = x.className.replace(" w3-show", "");
-}
-}
-</script>
-
+<script src="config.js"></script>
+<script src="main.js"></script>
 </body>
 </html>

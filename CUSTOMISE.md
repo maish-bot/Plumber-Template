@@ -19,24 +19,30 @@ Open **config.js** and change:
 
 ## 2. Colours and fonts (2 minutes)
 Top of **styles.css** (`:root`):
-- `--navy` – header, dark sections, headings
-- `--accent` – the Call buttons (amber by default)
-- `--blue` – links and small highlights
-Fonts: `--font-display` and `--font-body` (also update the Google Fonts link in index.html).
+- `--copper` – the Call buttons and highlights
+- `--ink` – text, lines and dark sections
+- `--paper` / `--paper-2` – the cream backgrounds
+Fonts: `--font-display` (big condensed headings), `--font-body` (text) and
+`--font-mono` (prices, labels). If you change fonts, also update the Google Fonts
+link in index.html.
 
 ## 3. Photos
 See `PUT-PHOTOS-HERE.txt`.
 
 ## 4. Text and prices (in index.html)
 Search for these headings to find each section:
-- "What we can help with" – the 3 main services and the "also" list
-- "Clear prices, no surprises" – price cards and the common jobs list
+- "What I fix" – the 3 main services and the "also" list
+- "Prices" – the price sheet (each row is one `<tr>`)
 - "Hi, I’m Johnny" – about the plumber, qualifications
-- "What local customers say" – reviews (copy a block to add one)
-- "Common questions" – FAQ
+- "What customers said" – reviews (copy a block to add one)
+- "Questions people ask" – FAQ
 - "Type of job" – options in the quote form
 
 ## 5. Google listing info
 Update the `application/ld+json` block in the `<head>` of index.html
 (name, phone, email, areas). This is what Google reads.
 Also update the `<title>` and `description` at the top.
+
+## 6. Writing style
+The text is written in first person ("I", "me") as a sole trader. If it's a
+team, find & replace "I’ll" → "we’ll", "I’m" → "we’re", "me" → "us".

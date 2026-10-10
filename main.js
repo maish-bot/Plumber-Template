@@ -91,9 +91,9 @@
     if (S.formEndpoint) {
       b.disabled = true; b.textContent = 'Sending…';
       fetch(S.formEndpoint, { method: 'POST', body: data, headers: { Accept: 'application/json' } })
-        .then(function (r) { if (!r.ok) throw 0; form.reset(); msg.textContent = 'Thanks, we’ve got your request and will call you back shortly. For emergencies please ring ' + (S.phone || '') + '.'; msg.classList.add('show'); })
+        .then(function (r) { if (!r.ok) throw 0; form.reset(); msg.textContent = 'Thanks, got it. I’ll call you back shortly. If it’s an emergency, ring ' + (S.phone || '') + '.'; msg.classList.add('show'); })
         .catch(function () { msg.textContent = 'Sorry, that didn’t send. Please call ' + (S.phone || '') + '.'; msg.classList.add('show'); })
-        .then(function () { b.disabled = false; b.textContent = 'Get my free quote'; });
+        .then(function () { b.disabled = false; b.textContent = 'Send it over'; });
     } else {
       var body = []; data.forEach(function (v, k) { if (v) body.push(k + ': ' + v); });
       location.href = 'mailto:' + (S.email || '') + '?subject=' + encodeURIComponent('Quote request') + '&body=' + encodeURIComponent(body.join('\n'));
